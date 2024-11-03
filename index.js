@@ -5,8 +5,8 @@ const socketIo = require("socket.io");
 const axios = require("axios");
 
 const config = {
-    port: process.env.PORT || 4000,
-    apiBaseUrl: process.env.API_BASE_URL || "https://camgm.com/api",
+    port: 4000,
+    apiBaseUrl: "https://camgm.com/api",
     dataUpdateInterval: 15000,
     roomInfoUpdateInterval: 15000,
 };
