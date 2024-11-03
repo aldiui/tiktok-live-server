@@ -229,7 +229,7 @@ class TikTokLiveHandler {
     }
 }
 
-app.get("api/start/:jadwalId", async (req, res) => {
+app.get("/api/start/:jadwalId", async (req, res) => {
     const { jadwalId } = req.params;
     if (connectionManager.getConnection(jadwalId)) {
         return res.json({
@@ -256,7 +256,7 @@ app.get("api/start/:jadwalId", async (req, res) => {
     }
 });
 
-app.get("api/end/:jadwalId", async (req, res) => {
+app.get("/api/end/:jadwalId", async (req, res) => {
     const { jadwalId } = req.params;
     try {
         const handler = connectionManager.getConnection(jadwalId);
