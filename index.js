@@ -5,10 +5,10 @@ const socketIo = require("socket.io");
 const axios = require("axios");
 
 const config = {
-    port: 4000,
+    port: 30001,
     apiBaseUrl: "https://camgm.com/api",
-    dataUpdateInterval: 15000,
-    roomInfoUpdateInterval: 15000,
+    dataUpdateInterval: 10000,
+    roomInfoUpdateInterval: 10000,
 };
 
 const app = express();
